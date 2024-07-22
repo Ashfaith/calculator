@@ -7,13 +7,17 @@
 }
 
 .display {
-    min-height: 60px;
-    min-width: 100px;
+    height: 100px;
+    width: 330px;
     background-color: black;
     color: white;
     text-align: right;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     padding: 10px;
-    box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .button-grid {
@@ -22,4 +26,18 @@
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 5px;
+    border: none;
+    background: #43434d;
+    color: #30c67b;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }

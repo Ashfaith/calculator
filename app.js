@@ -45,17 +45,17 @@ class Calculator {
         let a = Number(this.previousNumber);
         let b = Number(this.currentNumber);
 
-        if (this.operator === "/" && b === 0){
-            console.log('Dividing by 0 not possible');
+        if (this.operator === "/" && a === 0){
+            currentNumberDisplay.innerText = 'Dividing by 0 not possible';
             return;
         } else {
             let calcType = {
                 '+': a + b,
                 '-': a - b,
                 'x': a * b,
-                '/': (a / b),
+                '/': a / b,
             }
-            this.currentNumber = calcType[this.operator];
+            this.currentNumber = calcType[this.operator].toString();
             this.previousNumber = '';
             previousNumberDisplay.innerText = '';
             currentNumberDisplay.innerText = this.currentNumber
