@@ -7,17 +7,29 @@
 }
 
 .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100px;
     width: 330px;
-    background-color: black;
+    background-color: #4c4c57;
     color: white;
     text-align: right;
     font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
     padding: 10px;
     border-radius: 15px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.display .workingNumber {
+    font-size: 48px;
+    align-self: flex-end;
+    white-space: nowrap; 
 }
 
 .button-grid {
@@ -37,7 +49,8 @@ button {
     background: #43434d;
     color: #30c67b;
     font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
