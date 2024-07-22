@@ -42,8 +42,8 @@ class Calculator {
     }
     
     calculation() {
-        let a = Number(this.currentNumber);
-        let b = Number(this.previousNumber);
+        let a = Number(this.previousNumber);
+        let b = Number(this.currentNumber);
 
         if (this.operator === "/" && b === 0){
             console.log('Dividing by 0 not possible');
@@ -53,7 +53,7 @@ class Calculator {
                 '+': a + b,
                 '-': a - b,
                 'x': a * b,
-                '/': a / b,
+                '/': (a / b),
             }
             this.currentNumber = calcType[this.operator];
             this.previousNumber = '';
