@@ -1,3 +1,22 @@
+html {
+    color: #30c67b;
+    background: linear-gradient(70deg, #5f5f5f, #30c67b, #5f5f5f);
+    background-size: 200% 200%;
+    animation: color 20s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -10,7 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
     width: 330px;
     background-color: #4c4c57;
     color: white;
@@ -23,13 +42,16 @@
     padding: 10px;
     border-radius: 15px;
     overflow: hidden; 
-    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 10px;
 }
 
 .display .workingNumber {
-    font-size: 48px;
+    font-size: 40px;
     align-self: flex-end;
-    white-space: nowrap; 
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .button-grid {
@@ -53,4 +75,12 @@ button {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 4px 10px;
+    transition: background 0.3s, color 0.3s;
 }
+
+button:hover {
+    background: #30c67b; 
+    color: #43434d;
+}
+
